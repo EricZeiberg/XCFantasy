@@ -1,0 +1,18 @@
+<br>
+<h2><%= @user.name %> - <%= @user.points %> points</h2>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Race</th>
+      <th>Link to prediction page</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @races.each do |r| %>
+    <tr>
+      <td><%= r.name %></td>
+      <td><a class="btn btn-primary" href="pred/<%= r.id %>" role="button">Go</a></td>
+      </tr>
+    <% end %>
+</table>

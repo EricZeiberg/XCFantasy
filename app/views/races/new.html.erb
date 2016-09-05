@@ -1,0 +1,29 @@
+<h2>Create new meet</h2>
+<hr>
+
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter name">
+    <label for="date">Date</label>
+    <input type="text" class="form-control" id="date" placeholder="Enter date">
+    <label for="distance">Distance</label>
+    <input type="text" class="form-control" id="distance" placeholder="Enter distance">
+    </div>
+  <button id="submit-button" href="/meets" type="submit" class="btn btn-primary">Submit</button>
+</form>
+<script>
+$(document).ready(function() {
+    $("#submit-button").click(function(){
+      $.ajax({
+      url: "create",
+      type: "POST",
+      data: {"name" : $("#name").val(), "date" : $("#date").val(), "distance" : $("#distance").val()},
+      dataType: "json",
+      success: function(data) {
+        window.location.replace("/meets");
+        }
+      });
+    });
+});
+</script>

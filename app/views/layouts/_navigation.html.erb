@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark bg-inverted color">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Features</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Pricing</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+
+  <form class="form-inline pull-xs-right">
+    <% if current_user.nil? %>
+      <a class="nav-link" href="#">Log in</a>
+   <% else %>
+      <p class="navbar-text" style="color: white">Logged in as <%= current_user.name %> <a href="/users/sign_out"> Sign out</a></p>
+      <% end %>
+  </form>
+  </ul>
+</nav>

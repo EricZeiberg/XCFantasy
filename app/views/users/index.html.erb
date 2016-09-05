@@ -1,0 +1,22 @@
+<br>
+<h2>Leaderboard</h2>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Place</th>
+      <th>Username</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% i = 1 %>
+    <% @users.each do |u| %>
+    <tr>
+      <td><%= i %></td>
+      <td><a href="/user/<%= u.name %>"><%= u.name %></a></td>
+      <td><%= u.points %></td>
+    </tr>
+    <% i+=1 %>
+    <% end %>
+</table>

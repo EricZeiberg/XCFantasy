@@ -1,0 +1,21 @@
+<center>
+<h2>Recent Races</h2>
+<table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Distance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @races.each do |r| %>
+        <tr>
+          <td><a href="/meet/<%= r.id %>"><%= r.name %></a></td>
+          <td><%= r.date %></td>
+          <td><%= r.distance %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+</center>

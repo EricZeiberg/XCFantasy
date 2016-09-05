@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+*/
+@import "bootstrap";
+.brand {
+  float: left;
+  padding-right: 8px;
+
+}
+
+.color {
+  background: transparent;
+  border: solid 1px white;
+}
+.pill {
+  background: transparent;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+
+}
+
+ul
+{
+    list-style: none outside none;
+}
+
+h2 small {
+
+    position: relative;
+    bottom: 15px;
+}
+
+
+
+
+.col-md-9 {
+  position: relative;
+  right: 15px;
+}
+ul.nav {
+  list-style: none;
+  padding: 0;
+}
+ul.nav li {
+  display: inline;
+}
+#flash_notice, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+body {
+  background: url(http://ericzeiberg.com/assets/images/bg1.jpg);
+  background-size: 1900px 1900px;
+  margin: 1em 0;
+  color: #fff;
+}
+#flash_notice {
+  background-color: #80ff80;
+  border: solid 1px #6C6;
+  color: #000000;
+  border-radius: 5px;
+}
+
+#flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+  color: #000000;
+  border-radius: 5px;
+}
+
+ul.nav li {
+display: block;
+margin-bottom: 10px;
+}

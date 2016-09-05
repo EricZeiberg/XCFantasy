@@ -1,0 +1,65 @@
+<center>
+  <br>
+<h2>Input results for <%= @meet.name %></h2>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Runner</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @meet.runners.each do |r| %>
+      <tr>
+        <td><%= r.name %></td>
+        <td>
+              <select class="form-control" type="number"  id="<%= r.id %>-min">
+              <% for i in 0..59 %>
+              <% if @sec == i %>
+                  <option selected="selected"><%=i%></option>
+              <% else %>
+                <option><%=i%></option>
+              <% end %>
+              <%end%>
+            </select> <select class="form-control" type="number"  id="<%= r.id %>-sec">
+            <% for i in 0..59 %>
+            <% if @sec == i %>
+                <option selected="selected"><%=i%></option>
+            <% else %>
+              <option><%=i%></option>
+            <% end %>
+            <%end%>
+          </select></td>
+      </tr>
+    <%end%>
+  </tbody>
+</table>
+<a id ="submit-button" class="btn btn-success" href="#" role="button">Submit</a>
+</center>
+
+<script>
+$(document).ready(function() {
+    $("#submit-button").click(function(){
+      $.ajax({
+      url: "runUpdate",
+      type: "POST",
+      data: {
+        <% i = 0 %>
+        <% @meet.runners.each do |r| %>
+        <%=i%> : {
+        name : "<%= r.name %>",
+        value : $("#<%=r.id%>-min").val() + " " + $("#<%=r.id%>-sec").val()
+        },
+        <% i+=1 %>
+        <% end %>
+
+      },
+      dataType: "json",
+      success: function(data) {
+        alert("Success!")
+        }
+      });
+    });
+});
+</script>

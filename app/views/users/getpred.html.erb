@@ -1,0 +1,22 @@
+<br>
+<h2><%= @user.name%>'s prediction list for <%= @meet.name %></h2>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Runner</th>
+      <th>Prediction</th>
+      <th>Real</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @user.predictions.each do |p| %>
+    <tr>
+      <td><%= Runner.find(p.runner_id).name %></td>
+      <td><%= p.min %>:<%= p.sec %></td>
+      <td><%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.min %>:<%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.sec %></td>
+      <td><%= p.points %></td>
+      </tr>
+    <% end %>
+</table>

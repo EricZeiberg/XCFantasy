@@ -1,0 +1,81 @@
+<center>
+  <% if @meet.isLocked? %>
+  <br>
+  <div class="alert alert-warning" role="alert">
+  <strong>Warning</strong> This meet has been locked
+</div>
+<%end%>
+<h2><%= @meet.name %></h2>
+<table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Prediction</th>
+          <th>Real Time</th>
+          <th>Points</th>
+          <th>Submit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @meet.runners.each do |r| %>
+        <tr>
+          <td><%= r.name %></td>
+          <td> <% if @meet.isLocked? %>
+            <select class="form-control" type="number"id="min" disabled>
+              <% else %>
+              <select class="form-control" type="number"id="<%= r.id %>-min">
+              <% end %>
+            <% for i in 0..59 %>
+            <% if !@prediction.where(:runner_id => r.id.to_str).first.nil? and @prediction.where(:runner_id => r.id.to_str).first.min == i %>
+                <option selected="selected"><%=i%></option>
+            <% else %>
+              <option><%=i%></option>
+            <% end %>
+            <%end%>
+          </select>
+          <% if @meet.isLocked? %>
+            <select class="form-control" type="number"id="sec" disabled>
+              <% else %>
+              <select class="form-control" type="number"id="<%= r.id %>-sec">
+          <% end %>
+              <% for i in 0..59 %>
+              <% if !@prediction.where(:runner_id => r.id.to_str).first.nil? and @prediction.where(:runner_id => r.id.to_str).first.sec == i %>
+                  <option selected="selected"><%=i%></option>
+              <% else %>
+                <option><%=i%></option>
+              <% end %>
+              <%end%>
+            </select>
+            </td>
+          <% if @meet.isRun? %>
+            <td><%= r.results.where(:runner => r).first.min %>:<%= r.results.where(:runner => r).first.sec %></td>
+            <td><%= @prediction.where(:meet => @meet, :runner_id => r.id.to_str).first.points %></td>
+          <% else %>
+            <td>--Not Run--</td>
+            <td>--Not Run--</td>
+          <% end %>
+          <% if !@meet.isLocked? %>
+          <td><a id ="submit-button" data-value="<%= r.id %>" class="btn btn-success submit" href="#" role="button">Submit</a></td>
+          <% else %>
+          <td><button disabled id="submit-button" data-value="<%= r.id %>" class="btn btn-success " href="#" role="button">Submit</button></td>
+          <% end%>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+</center>
+<script>
+$(document).ready(function() {
+    $(".submit").click(function(){
+      $.ajax({
+      url: "update",
+      type: "POST",
+      data: {"min" : $("#" + $(this).attr("data-value") + "-min").val(), "sec" : $("#" + $(this).attr("data-value") + "-sec").val(), "r_id" : $(this).attr("data-value")},
+      dataType: "json",
+      success: function(data) {
+        alert("Success!")
+        }
+      });
+    });
+});
+</script>
