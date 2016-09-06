@@ -11,8 +11,8 @@
   <tbody>
     <% @races.each do |r| %>
     <tr>
-      <td><%= r.name %></td>
-      <td><a class="btn btn-primary" href="pred/<%= r.id %>" role="button">Go</a></td>
+      <td><h4><%= r.name %></h4></td>
+      <td><a class="btn btn-primary" href="/user/<%= @user.name %>/pred/<%= r.id %>" role="button">Go</a></td>
       </tr>
     <% end %>
 </table>

@@ -57,14 +57,18 @@ class RacesController < ApplicationController
   def get
     id = params[:id]
     @meet = Meet.find(id)
-    @prediction = current_user.predictions.where(:meet => @meet)
-    @prediction.each do |p|
-      if p.nil?
-        @min = 0
-        @sec = 0
-      else
-        @min = p.min
-        @sec = p.sec
+    if current_user.nil?
+      @predictions = nil
+    else
+      @prediction = current_user.predictions.where(:meet => @meet)
+      @prediction.each do |p|
+        if p.nil?
+          @min = 0
+          @sec = 0
+        else
+          @min = p.min
+          @sec = p.sec
+        end
       end
     end
   end

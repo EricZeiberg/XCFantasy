@@ -25,3 +25,6 @@
       </tbody>
     </table>
 </center>
+<% if !current_user.nil? and current_user.isAdmin? %>
+<a class="pull-xs-right btn btn-primary" href="/meet/new" role="button">Create new meet</a>
+<% end %>
