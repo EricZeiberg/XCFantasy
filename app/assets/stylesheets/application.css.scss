@@ -7,7 +7,8 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- *
+ 
+ *= require octicons
 */
 @import "bootstrap";
 .brand {
@@ -18,7 +19,8 @@
 
 .color {
   background: transparent;
-  border: solid 1px white;
+  border: solid 1px #cfd2da;;
+
 }
 .pill {
   background: transparent;
@@ -59,11 +61,30 @@ ul.nav li {
   margin: 10px 0;
 }
 body {
-  background: url(http://ericzeiberg.com/assets/images/bg1.jpg);
+  //background: url(http://ericzeiberg.com/assets/images/bg1.jpg);
   background-size: 1900px 1900px;
   margin: 1em 0;
   color: #fff;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.5;
+color: #cfd2da;
+    background-color: #252830;
 }
+hr {
+    border: 0;
+    border-top: 1px solid #434857;
+}
+.nav-pills .nav-link.active{
+  background-color: #1ca8dd;
+  border-color: #1ca8dd;
+  color: black;
+}
+
+.nav-pills .nav-link {
+  color: #cfd2da;
+}
+
 #flash_notice {
   background-color: #80ff80;
   border: solid 1px #6C6;

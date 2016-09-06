@@ -1,9 +1,13 @@
 <div class="jumbotron color">
-  <h1 class="display-3">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <h1 class="display-3">XCFantasy</h1>
+  <p class="lead">Predict times for your teammates and see who can top the leaderboard</p>
   <hr class="m-y-2">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p>More accuracy =  more points</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <% if current_user.nil? %>
+      <a class="btn btn-primary btn-lg" href="/users/sign_up" role="button">Sign up</a>
+    <% else %>
+      <a class="btn btn-primary btn-lg" href="/meets" role="button">Start predicting</a>
+    <% end %>
   </p>
 </div>

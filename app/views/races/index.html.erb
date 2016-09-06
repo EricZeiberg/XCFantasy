@@ -1,6 +1,6 @@
 <center>
 <h2>Recent Races</h2>
-<table class="table">
+<table class="table table-hover">
       <thead>
         <tr>
           <th>Name</th>
@@ -11,7 +11,13 @@
       <tbody>
         <% @races.each do |r| %>
         <tr>
-          <td><a href="/meet/<%= r.id %>"><%= r.name %></a></td>
+          <td><a href="/meet/<%= r.id %>"><%= r.name %></a>
+            <% if r.isLocked? and !r.isRun? %>
+            <span data-toggle="tooltip" rel="tooltip" data-placement="top" title="Locked" class="octicon octicon-lock"></span>
+            <% elsif r.isRun? %>
+              <span data-toggle="tooltip" rel="tooltip" data-placement="top" title="Completed" class="octicon octicon-check"></span>
+            <% end %>
+          </td>
           <td><%= r.date %></td>
           <td><%= r.distance %></td>
         </tr>

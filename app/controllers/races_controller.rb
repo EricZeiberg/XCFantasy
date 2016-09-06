@@ -19,6 +19,9 @@ class RacesController < ApplicationController
 
   def run
     @meet = Meet.find(params[:id])
+    if @meet.isRun?
+      redirect_to '/meets'
+    end
   end
 
   def runUpdate

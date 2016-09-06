@@ -4,7 +4,11 @@ Blog::Application.routes.draw do
   end
   root :to => "home#index"
   resources :posts
-  devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
+  devise_for :users
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+    get '/users/sign_up' => 'devise/registrations#new'
+  end
   # get '/members', :to => "member#index"
   # get '/member/new', :to => 'member#new'
   # get '/member/:id', :to => 'member#show'

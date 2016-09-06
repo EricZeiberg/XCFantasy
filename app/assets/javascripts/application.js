@@ -13,4 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require tether
 //= require bootstrap-sprockets
+
+
+    $(document).ready(function () {
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
+    });

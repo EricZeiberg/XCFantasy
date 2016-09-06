@@ -1,8 +1,13 @@
 <center>
-  <% if @meet.isLocked? %>
+  <% if @meet.isLocked? and !@meet.isRun?%>
   <br>
   <div class="alert alert-warning" role="alert">
-  <strong>Warning</strong> This meet has been locked
+  <strong>Warning</strong> This meet has been locked.
+</div>
+<% elsif @meet.isRun? %>
+<br>
+<div class="alert alert-success" role="alert">
+<strong>Notice</strong> This meet has been run already, and is in archive mode.
 </div>
 <%end%>
 <h2><%= @meet.name %></h2>
