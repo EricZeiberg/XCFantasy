@@ -1,5 +1,5 @@
 <br>
-<h2><%= @user.name%>'s prediction list for <%= @meet.name %></h2>
+<h2><%= @user.name%>'s prediction list for <%= @meet.name %> <h4><em><%= '(Not Run Yet)' if !@meet.isRun?%></em></h4></h2>
 <hr>
 <table class="table">
   <thead>
@@ -15,7 +15,7 @@
     <tr>
       <td><%= Runner.find(p.runner_id).name %></td>
       <td><%= p.min %>:<%= p.sec %></td>
-      <td><%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.min %>:<%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.sec %></td>
+      <td><%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.min if p.meet.isRun? %>:<%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.sec if p.meet.isRun?%></td>
       <td><%= p.points %></td>
       </tr>
     <% end %>

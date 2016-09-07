@@ -69,8 +69,8 @@
             </td>
 
             <% if @meet.isRun? %>
-            <td><%= r.results.where(:runner => r).first.min %>:<%= r.results.where(:runner => r).first.sec %></td>
-            <td><%= @prediction.where(:meet => @meet, :runner_id => r.id.to_str).first.points if !@prediction.nil?  %></td>
+            <td><%= r.results.where(:runner => r, :meet => @meet).first.min %>:<%= r.results.where(:runner => r, :meet => @meet).first.sec %></td>
+            <td><%= @prediction.where(:meet => @meet, :runner_id => r.id.to_str).first.points if !@prediction.where(:meet => @meet, :runner_id => r.id.to_str).first.nil?  %></td>
           <% else %>
             <td>--Not Run--</td>
             <td>--Not Run--</td>
@@ -93,7 +93,7 @@
       $(document).ready(function () {
         $(".submit").click(function () {
           $.ajax({
-            url: "update",
+            url: "<%= @meet.id %>/update",
             type: "POST",
             data: {
               "min": $("#" + $(this).attr("data-value") + "-min").val(),
