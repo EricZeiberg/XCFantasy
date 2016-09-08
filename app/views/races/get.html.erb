@@ -33,7 +33,7 @@
     <tbody>
       <% @meet.runners.each do |r| %>
       <tr>
-        <td><%= r.name %></td>
+        <td><%= r.name %> <em><%= ' - Frosh' if r.isFrosh? %></em></td>
 
         <td>
           <div class="row">
