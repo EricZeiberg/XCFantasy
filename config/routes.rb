@@ -35,7 +35,7 @@ Blog::Application.routes.draw do
 
   get '/leaderboard', :to => "users#index"
   get '/user/:name', :to => "users#view"
-  get '/user/:name/pred/:raceid', :to => "users#getPred"
+  get '/user/:name/pred/:raceid', :to => "users#getpred"
 
   get '/runners', :to => "runners#index"
   get '/runner/:id', :to => "runners#get"

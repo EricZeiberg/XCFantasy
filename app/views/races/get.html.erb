@@ -42,12 +42,16 @@
               <% else %>
                 <select class="form-control" type="number" id="<%= r.id %>-min">
                   <% end %>
-                  <% for i in 0..59 %>
-                  <% if !@prediction.nil? and !@prediction.where(:runner_id => r.id.to_str).first.nil? and @prediction.where(:runner_id => r.id.to_str).first.min == i %>
-                  <option selected="selected"><%=i%></option>
-                <% else %>
-                  <option><%=i%></option>
+                  <% if !@prediction.nil? and !@prediction.where(:runner_id => r.id.to_str).first.nil?  %>
+                    <% @min = @prediction.where(:runner_id => r.id.to_str).first.min == i %>
+                  <% else %>
+                    <% @min = 60 %>
                   <% end %>
+                  <% for i in 0..59 %>
+                  <% if i == @min %>
+                    <option selected="selected"><%=i%></option>
+                  <% end %>
+                  <option><%=i%></option>
                   <%end%>
                 </select>
               </div>
@@ -56,12 +60,16 @@
                 <% else %>
                   <select class="form-control" type="number" id="<%= r.id %>-sec">
                     <% end %>
-                    <% for i in 0..59 %>
-                    <% if !@prediction.nil? and !@prediction.where(:runner_id => r.id.to_str).first.nil? and @prediction.where(:runner_id => r.id.to_str).first.sec == i %>
-                    <option selected="selected"><%=i%></option>
-                  <% else %>
-                    <option><%=i%></option>
+                    <% if !@prediction.nil? and !@prediction.where(:runner_id => r.id.to_str).first.nil?  %>
+                      <% @sec = @prediction.where(:runner_id => r.id.to_str).first.sec == i %>
+                    <% else %>
+                      <% @sec = 60 %>
                     <% end %>
+                    <% for i in 0..59 %>
+                    <% if i == @sec %>
+                      <option selected="selected"><%=i%></option>
+                    <% end %>
+                    <option><%=i%></option>
                     <%end%>
                   </select>
                 </div>

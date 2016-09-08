@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     @races = Meet.all
   end
 
-  def getPred
+  def getpred
     @meet = Meet.find(params[:raceid])
     @user = User.where(:name => params[:name]).first
   end
