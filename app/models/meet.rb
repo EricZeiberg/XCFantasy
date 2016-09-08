@@ -9,6 +9,8 @@ class Meet
   field :isRun, :type => Boolean, :default => false
   field :isLocked, :type => Boolean, :default => false
 
+  field :notes, :type => String, :default => ""
+
   has_many :results
   has_and_belongs_to_many :runners
 
