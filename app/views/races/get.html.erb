@@ -43,7 +43,7 @@
                 <select class="form-control" type="number" id="<%= r.id %>-min">
                   <% end %>
                   <% if !@prediction.nil? and !@prediction.where(:runner_id => r.id.to_str).first.nil?  %>
-                    <% @min = @prediction.where(:runner_id => r.id.to_str).first.min == i %>
+                    <% @min = @prediction.where(:runner_id => r.id.to_str).first.min %>
                   <% else %>
                     <% @min = 60 %>
                   <% end %>
@@ -61,7 +61,7 @@
                   <select class="form-control" type="number" id="<%= r.id %>-sec">
                     <% end %>
                     <% if !@prediction.nil? and !@prediction.where(:runner_id => r.id.to_str).first.nil?  %>
-                      <% @sec = @prediction.where(:runner_id => r.id.to_str).first.sec == i %>
+                      <% @sec = @prediction.where(:runner_id => r.id.to_str).first.sec %>
                     <% else %>
                       <% @sec = 60 %>
                     <% end %>
