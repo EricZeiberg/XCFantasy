@@ -28,10 +28,14 @@ class RacesController < ApplicationController
     meet = Meet.find(params[:id])
     i = 0
     result = Result.new
-    meet.runners.each do |r|
+    while params[i.to_s] != nil
       data = params[i.to_s]
-      runner = Runner.where(:name => data[:name]).first
-      result = Result.create(:meet => meet, :runner => runner, :min => data[:value].split(" ")[0], :sec => data[:value].split(" ")[1], :meet => meet)
+      runner = Runner.where(:name => data["name"]).first
+      result = Result.create(:meet => meet, :runner => runner, :min => data[:value].split(":")[0], :sec => data[:value].split(":")[1], :meet => meet)
+      if runner == nil
+        i+=1
+        next
+      end
       runner.results << result
       predictions = Prediction.where(:meet => meet, :runner_id => runner.id.to_str)
       predictions.each do |p|

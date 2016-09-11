@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-client = MongoClient("mongodb://localhost:27017")
+client = MongoClient("mongodb://162.243.51.178:27017")
 db = client.XC_DEV
 
 coll = db.runners

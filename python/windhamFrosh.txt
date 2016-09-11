@@ -1,0 +1,203 @@
+1    1 Killian McNamee     1163 Tolland                  9   12:24  5:55
+2    2 Nathan Paolangeli   1165 Tolland                  9   12:40  6:02
+3    3 Alec Sauter         1170 Tolland                  9   12:49  6:06
+4    4 Christopher Abbey    355 East Lyme                9   12:51  6:07
+5      Nicholas Person      314 E. O. Smith              9   12:51  6:08
+6    5 Trevor Anthony      1034 South Windsor            9   12:55  6:09
+7    6 John Griffin        1155 Tolland                  9   13:00  6:12
+8    7 Conor Irwin          701 Ledyard                  9   13:04  6:14
+9    8 Charlie Pettit       175 Cheshire                 9   13:07  6:15
+10    9 Will Bartlett        358 East Lyme                9   13:17  6:20
+11   10 Alreno Sebastian     921 Norwich Free Academy     9   13:17  6:20
+12   11 Cameron Pedemonti    504 Glastonbury              9   13:23  6:23
+13      Charles Marenghi     822 Naugatuck                9   13:26  6:24
+14   12 Brendan Mellitt      169 Cheshire                 9   13:26  6:24
+15      Jonathan Sides        26 Avon                     9   13:27  6:25
+16   13 Mitchell Rakowski   1020 Simsbury                 9   13:30  6:26
+17   14 Mason Barnett        696 Ledyard                  9   13:32  6:27
+18      Matthew Speight      954 Plainfield               9   13:33  6:27
+19   15 Stephan Buden        958 RHAM                     9   13:36  6:29
+20   16 Ian Lyon            1161 Tolland                  9   13:36  6:29
+21   17 Jackson Grady        575 Hall                     9   13:36  6:29
+22   18 Mark Petrosky        121 Bristol Central          9   13:38  6:30
+23   19 Benjamin Stafford    130 Bristol Central          9   13:39  6:30
+24   20 Leo Kavanaugh        114 Bristol Central          9   13:39  6:30
+25   21 Owen Wollenberg     1032 Simsbury                 9   13:41  6:31
+26   22 Samuel Bennett       360 East Lyme                9   13:42  6:32
+27   23 Shaw Pedemonti       503 Glastonbury              9   13:44  6:33
+28   24 Spencer Hoyt         495 Glastonbury              9   13:49  6:35
+29   25 Owen Fiore           157 Cheshire                 9   13:49  6:35
+30   26 Jason Russo         1071 South Windsor            9   13:51  6:36
+31   27 Juan Garcia          698 Ledyard                  9   13:51  6:36
+32   28 Tomas Harrington     494 Glastonbury              9   13:52  6:36
+33   29 Franklin Kuhn       1159 Tolland                  9   13:52  6:37
+34   30 Wesley (dig Ludlow   915 Norwich Free Academy     9   13:55  6:38
+35      Dan Ottowitz        1226 Watertown                9   13:56  6:38
+36      Hunter Dale          303 E. O. Smith              9   13:57  6:39
+37      Harold McCarty      1301 Windsor                  9   14:00  6:40
+38   31 John Dalton          189 Conard                   9   14:01  6:41
+39   32 Christopher Stephen  509 Glastonbury              9   14:20  6:50
+40   33 Sean Boyle           480 Glastonbury              9   14:20  6:50
+41   34 Jacob Martens       1162 Tolland                  9   14:23  6:51
+42      Zachary Donald       305 E. O. Smith              9   14:24  6:52
+43      Sai Prathagadapa      23 Avon                     9   14:27  6:53
+44   35 Luke Reed           1069 South Windsor            9   14:29  6:54
+45   36 Kristopher Dow      1190 Waterford                9   14:33  6:56
+46      Kyle Grenier        1219 Watertown                9   14:34  6:56
+47   37 Corey Duncanson      275 Daniel Hand              9   14:35  6:57
+48   38 Andrew Ferruolo      325 East Catholic            9   14:37  6:58
+49   39 Kely Maloney         788 Manchester               9   14:39  6:59
+50      Dan Robinson        1095 Stonington               9   14:40  6:59
+51   40 Francis Simpatico    176 Cheshire                 9   14:41  7:00
+52      Dakoda Gagnon       1154 Tolland                  9   14:44  7:01
+53   41 Andrew Hertzog       673 Jonathan Law             9   14:46  7:02
+54   42 Brandon Keeler       330 East Catholic            9   14:47  7:02
+55   43 Noel Fagan           567 Hall                     9   14:47  7:03
+56      Aaron Lampham        821 Naugatuck                9   14:48  7:03
+57   44 Jay Halterman        160 Cheshire                 9   14:48  7:03
+58      Filip Aubrecht      1081 Stonington               9   14:49  7:04
+59      Buckley Huffstetler  754 Litchfield               9   14:50  7:04
+60   45 Matthew Nemergut     218 Conard                   9   14:51  7:05
+61   46 John Hamling         853 North Haven              9   14:52  7:05
+62   47 Michael Dunn         999 Simsbury                 9   14:53  7:06
+63      Sean Ventresca       807 Montville                9   14:54  7:06
+64   48 Brian Pervere        612 Hall                     9   14:55  7:07
+65      Jason Wolstenholme  1128 Thetford Academy         9   14:59  7:08
+66   49 John Arborio         476 Glastonbury              9   15:03  7:10
+67   50 Jose Ramirez         123 Bristol Central          9   15:04  7:11
+68   51 Christian Bevilacqu   34 Bacon Academy            9   15:04  7:11
+69      Sean Donovan         489 Glastonbury              9   15:05  7:11
+70   52 Leo Rupp-Coppi       295 Daniel Hand              9   15:08  7:12
+71   53 Ryan Fries            41 Bacon Academy            9   15:13  7:15
+72      Ethan Lateer        1160 Tolland                  9   15:13  7:15
+73   54 Jacob Roediger       710 Ledyard                  9   15:15  7:16
+74   55 Adam Hanlon          580 Hall                     9   15:17  7:17
+75   56 Nathan Miller        602 Hall                     9   15:18  7:17
+76      Joshua Sower        1305 Windsor                  9   15:19  7:18
+77      Tyler Broderick     1147 Tolland                  9   15:20  7:18
+78   57 Nathan Sinclair      129 Bristol Central          9   15:23  7:20
+79   58 Luke Schilling       128 Bristol Central          9   15:24  7:20
+80   59 Liam Dunnigan       1000 Simsbury                 9   15:24  7:20
+81   60 Ethan Cuadro          37 Bacon Academy            9   15:28  7:22
+82      Connor Behuniak      811 Naugatuck                9   15:29  7:22
+83   61 Josh Vandyke        1143 Thomaston                9   15:32  7:24
+84      Jerrell Fitch        805 Montville                9   15:37  7:26
+85      Christopher Borst     90 Branford                 9   15:38  7:27
+86      Noah Januario        497 Glastonbury              9   15:41  7:28
+87   62 Ryan Blood           317 East Catholic            9   15:42  7:29
+88   63 Jamie Miller        1062 South Windsor            9   15:42  7:29
+89   64 Benjamin Rees       1021 Simsbury                 9   15:48  7:32
+90   65 Aidan Bergini        845 North Haven              9   15:51  7:33
+91   66 Sean Moriarty        790 Manchester               9   15:52  7:33
+92   67 Jason Weekes         798 Manchester               9   15:52  7:34
+93   68 Noah Klim            332 East Catholic            9   15:53  7:34
+94   69 Jacob Field         1133 Thomaston                9   15:54  7:35
+95   70 Luke Alvarez         540 Hall                     9   15:55  7:35
+96      Sean Power           988 Saint Bernard School     9   15:56  7:36
+97   71 Nathan Campbell      551 Hall                     9   15:57  7:36
+98      Ayman Nasry          100 Branford                 9   15:59  7:37
+99   72 Aidan Maiolo         374 East Lyme                9   15:59  7:37
+100   73 Robert Hahn          369 East Lyme                9   16:03  7:39
+101   74 Joshua Henry         371 East Lyme                9   16:03  7:39
+102      Vaughn Peverly       532 Granby Memorial          9   16:05  7:40
+103   75 Colin Rider          920 Norwich Free Academy     9   16:05  7:40
+104   76 Mike Riehl           976 RHAM                     9   16:05  7:40
+105   77 Noah Luby            787 Manchester               9   16:06  7:40
+106      Robert Tarala       1173 Tolland                  9   16:06  7:40
+107      Tj Demichele         562 Hall                     9   16:07  7:41
+108   78 Jake Leone           119 Bristol Central          9   16:08  7:41
+109      Jonathan Castillo    483 Glastonbury              9   16:10  7:42
+110      Angelo Pinto         948 Parish Hill              9   16:10  7:42
+111   79 Ethan Lukehart      1011 Simsbury                 9   16:12  7:43
+112   80 Roelf Weiland       1031 Simsbury                 9   16:13  7:44
+113      Alberto Suarez      1027 Simsbury                10   16:14  7:44
+114      Samuel O'Neil        528 Granby Memorial          9   16:15  7:44
+115      Matt Barrows         544 Hall                     9   16:15  7:45
+116      Tanner Giusani       493 Glastonbury              9   16:16  7:45
+117      Kyle Balabat         477 Glastonbury              9   16:17  7:45
+118   81 Marcel Vicente       239 Conard                   9   16:18  7:46
+119   82 Kody Dow            1189 Waterford                9   16:23  7:48
+120   83 Jason Houde          854 North Haven              9   16:24  7:49
+121      Colin Urmaza         892 Northwestern Regional    9   16:24  7:49
+122   84 Theodore Chesnes      36 Bacon Academy            9   16:26  7:50
+123      Victor Kachur        933 Norwich Technical        9   16:28  7:51
+124   85 Luke Curran          274 Daniel Hand              9   16:29  7:51
+125   86 Evan Roe             384 East Lyme                9   16:29  7:51
+126   87 Joe Dellavalle       850 North Haven              9   16:31  7:52
+127   88 Bryce Dorunda       1187 Waterford                9   16:33  7:53
+128      Eli Johnson           14 Avon                     9   16:35  7:54
+129      David Chieco         485 Glastonbury              9   16:37  7:55
+130      Lucas Sihvonen       939 Norwich Technical        9   16:37  7:55
+131      Andrew Betzig         88 Branford                 9   16:37  7:55
+132   89 Pat Chesanek        1129 Thomaston                9   16:38  7:56
+133      Xander Kardimas      524 Granby Memorial          9   16:39  7:56
+134   90 Ryan Nelson          971 RHAM                     9   16:42  7:57
+135      Caleb Burr           550 Hall                     9   16:43  7:58
+136   91 Ryan Feher          1050 South Windsor            9   16:44  7:58
+137   92 Daniel Monyak        213 Conard                   9   16:44  7:59
+138      Ethan Dunn           944 Parish Hill              9   16:45  7:59
+139      Dominic Rowland      125 Bristol Central          9   16:49  8:01
+140   93 Cameron Darcey       779 Manchester               9   16:49  8:01
+141   94 Andrew Munroe        969 RHAM                     9   16:51  8:02
+142   95 Jack Pineau           50 Bacon Academy            9   16:51  8:02
+143   96 Nick Faggio          276 Daniel Hand              9   16:53  8:03
+144   97 Mason McMahon        916 Norwich Free Academy     9   16:54  8:03
+145   98 Cruz Quintana        919 Norwich Free Academy     9   16:55  8:04
+146      Sam Makarawicz       597 Hall                     9   16:56  8:04
+147      Thomas Haviland      725 Lewis Mills              9   17:00  8:06
+148      William Michaud     1014 Simsbury                 9   17:01  8:06
+149   99 Owen Seltzer        1207 Waterford                9   17:02  8:07
+150      Ramon Graham        1119 Thetford Academy        10   17:02  8:07
+151      Gavin Horning-Kane   946 Parish Hill              9   17:04  8:08
+152  100 Tom Nelson           682 Jonathan Law             9   17:05  8:08
+153      Joshua Mangini       882 Northwestern Regional    9   17:06  8:09
+154  101 Quinn Spada          236 Conard                   9   17:06  8:09
+155  102 Jacob Gregory        196 Conard                   9   17:07  8:09
+156  103 Finn Hamblett        282 Daniel Hand              9   17:08  8:10
+157  104 Robert Sarkisian     233 Conard                   9   17:12  8:12
+158      Jacob Cannon        1083 Stonington               9   17:14  8:13
+159      Matt Arciero           3 Avon                     9   17:15  8:13
+160  105 Andrew Ely           962 RHAM                     9   17:15  8:13
+161  106 Daron Goslicki       327 East Catholic            9   17:16  8:14
+162      Joey Snider          626 Hall                     9   17:17  8:14
+163      Thomas Anglim        475 Glastonbury              9   17:18  8:14
+164      McGregor Reginald    824 Naugatuck                9   17:23  8:17
+165      Joshua Fresco-Hawes  365 East Lyme                9   17:30  8:20
+166  107 Kevin Bretthauer     656 Jonathan Law             9   17:35  8:23
+167      Nathan Bedingfield   801 Montville                9   17:36  8:23
+168      Stephen Prunk       1122 Thetford Academy         9   17:38  8:24
+169      Edward Coursey       559 Hall                     9   17:39  8:25
+170  108 Ryan Szymanski      1142 Thomaston                9   17:46  8:28
+171      Zack Martin          600 Hall                     9   17:49  8:29
+172  109 Philip Caldarella    848 North Haven              9   17:50  8:30
+173      Logan Murray         935 Norwich Technical        9   17:54  8:32
+174  110 Cameron Laich        858 North Haven              9   18:00  8:34
+175  111 Dylan Goldschneider 1193 Waterford                9   18:01  8:35
+176      Ryan Howe            584 Hall                     9   18:07  8:38
+177      Nicholas Drebot      998 Simsbury                 9   18:11  8:40
+178  112 Matthew Keatley     1196 Waterford                9   18:24  8:46
+179      Angel Rivera Sanche  618 Hall                     9   18:29  8:48
+180      Brendan Wilson       765 Litchfield               9   18:36  8:52
+181      Kieran Blackburn     928 Norwich Technical        9   18:40  8:54
+182  113 Erik Reed            293 Daniel Hand              9   18:44  8:55
+183  114 John Bean            894 Norwich Free Academy     9   18:44  8:56
+184  115 Jay Bazenas          268 Daniel Hand              9   18:46  8:56
+185      Steven Niccolai      292 Daniel Hand              9   18:48  8:57
+186      Michael Cherny       556 Hall                     9   18:50  8:58
+187      Tom Kuriakose        592 Hall                     9   18:54  9:00
+188      Alexander Vietzke    240 Conard                   9   18:59  9:03
+189      Andrew Weiss         630 Hall                     9   19:05  9:06
+190  116 Nick Shugrue         686 Jonathan Law             9   19:10  9:08
+191      Ian Sanok           1096 Stonington               9   19:11  9:08
+192      Alex Carducci        552 Hall                     9   19:28  9:16
+193  117 Gavin Jones          702 Ledyard                  9   19:41  9:23
+194      Anthony Fasci        108 Bristol Central          9   20:14  9:38
+195      Devin Donsbough      490 Glastonbury              9   20:38  9:50
+196      Jeremy Zetoff        637 Hall                     9   21:05 10:03
+197      Trevor Dease         561 Hall                     9   21:24 10:12
+198  118 Noah Feher           665 Jonathan Law             9   21:35 10:17
+199  119 Preston Ross        1140 Thomaston                9   22:28 10:42
+200      Logan Karpa          755 Litchfield               9   22:58 10:56
+201      Will Fallon          568 Hall                     9   23:44 11:18
+202      Ben Card             942 Parish Hill              9   25:24 12:06
+203      Phillip Shenkman    1026 Simsbury                 9   28:59 13:48
