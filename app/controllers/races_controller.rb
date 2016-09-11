@@ -46,10 +46,23 @@ class RacesController < ApplicationController
         end
         prediction.update_attributes(:points => score)
         prediction.save!
-        prediction.user.update_attributes(:points => prediction.user.points + score)
       end
       runner.save!
       i +=1
+    end
+
+    User.all.each do |u|
+      preds = u.predictions.where(:meet => meet)
+      if preds.count() == 0
+        next
+      end
+      predCount = 0
+      preds.each do |p|
+        predCount = predCount + p.points
+      end
+      score = predCount / preds.count()
+      u.update_attributes(:points => u.points + score)
+
     end
     meet.update_attributes(:isRun => true, :isLocked => true)
     meet.results << result

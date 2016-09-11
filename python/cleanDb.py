@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 client = MongoClient("mongodb://localhost:27017")
-db = client.XC_DEV_NEW2
+db = client.XC_DEV_NEW4
 
 coll = db.runners
 

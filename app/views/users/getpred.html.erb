@@ -11,11 +11,11 @@
     </tr>
   </thead>
   <tbody>
-    <% @user.predictions.each do |p| %>
+    <% @user.predictions.order_by(:points => 'desc').each do |p| %>
     <tr>
       <td><%= Runner.find(p.runner_id).name %></td>
       <td><%= p.min %>:<%= p.sec %></td>
-      <td><%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.min if p.meet.isRun? %>:<%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.sec if p.meet.isRun?%></td>
+      <td><%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.min if p.meet.isRun? and Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first != nil %>:<%= Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first.sec if p.meet.isRun? and Result.where(:meet => p.meet, :runner => Runner.find(p.runner_id)).first != nil%></td>
       <td><%= p.points %></td>
       </tr>
     <% end %>
