@@ -11,7 +11,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @user.predictions.order_by(:points => 'desc').each do |p| %>
+    <% @user.predictions.where(:meet => @meet).order_by(:points => 'desc').each do |p| %>
     <tr>
       <td><%= Runner.find(p.runner_id).name %></td>
       <td><%= p.min %>:<%= p.sec %></td>
