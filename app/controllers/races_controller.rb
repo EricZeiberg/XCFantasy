@@ -60,7 +60,7 @@ class RacesController < ApplicationController
       preds.each do |p|
         predCount = predCount + p.points
       end
-      score = predCount / preds.count()
+      score = (predCount / preds.count()) + (preds.count() * 2)
       u.update_attributes(:points => u.points + score)
 
     end
