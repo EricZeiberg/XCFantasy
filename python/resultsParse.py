@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
-client = MongoClient("mongodb://localhost:27017")
-db = client.XC_DEV_NEW2
+client = MongoClient("mongodb://162.243.51.178:27017")
+db = client.XC_DEV
 
 coll = db.runners
 import re
@@ -45,7 +45,7 @@ JSON = JSON[:-1]
 JSON = JSON + "}"
 print JSON
 
-req = urllib2.Request('http://localhost:3000/meet/57d0d88601161a3e02000001/runUpdate')
+req = urllib2.Request('http://162.243.51.178/meet/57d0d88601161a3e02000001/runUpdate')
 req.add_header('Content-Type', 'application/json')
 
 response = urllib2.urlopen(req, JSON)

@@ -9,6 +9,8 @@
     <input type="text" class="form-control" id="date" placeholder="Enter date">
     <label for="distance">Distance</label>
     <input type="text" class="form-control" id="distance" placeholder="Enter distance">
+    <label for="notes">Notes</label>
+    <input type="text" class="form-control" id="notes" placeholder="Enter notes">
     </div>
   <button id="submit-button" href="/meets" type="submit" class="btn btn-primary">Submit</button>
 </form>
@@ -18,7 +20,7 @@ $(document).ready(function() {
       $.ajax({
       url: "create",
       type: "POST",
-      data: {"name" : $("#name").val(), "date" : $("#date").val(), "distance" : $("#distance").val()},
+      data: {"name" : $("#name").val(), "date" : $("#date").val(), "distance" : $("#distance").val(), "notes" : $("#notes").val()},
       dataType: "json",
       success: function(data) {
         window.location.replace("/meets");

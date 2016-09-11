@@ -11,7 +11,7 @@ class RacesController < ApplicationController
   end
 
   def create
-    meet = Meet.new(:name => params[:name], :date => params[:date], :distance => params[:distance], :runners => Runner.all)
+    meet = Meet.new(:name => params[:name], :date => params[:date], :distance => params[:distance], :notes => params[:notes], :runners => Runner.all)
     meet.save!
    render status: 200, json: @controller.to_json
 
